@@ -1,0 +1,1 @@
+First advise, if you wanna use the last version of vue cli, which is the one for using it as frontend in frameworks like Symfony, beaware of using last lts versions of NodeJS and npm for not having troubles with extensions.

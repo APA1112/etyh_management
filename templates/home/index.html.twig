@@ -6,15 +6,12 @@
    <div class="container-fluid light d-flex vh-100 justify-content-center align-items-center text-white" style="cursor:pointer;">
        {% if is_granted('ROLE_DEVELOPER') %}
            <div class="container-fluid light d-flex justify-content-center align-items-center text-white">
-               {% include "@Contabilidad/contabilidadTag.html.twig" %}
            </div>
        {% endif %}
        {% if is_granted('ROLE_ADMIN') %}
            <div class="container-fluid light d-flex justify-content-center align-items-center text-white">
-               {% include "@Cine/cineTag.html.twig" %}
            </div>
            <div class="container-fluid light d-flex justify-content-center align-items-center text-white">
-               {% include "@Pizzon/pizzonTag.html.twig" %}
            </div>
        {% endif %}
    </div>

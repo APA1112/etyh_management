@@ -1,8 +1,6 @@
 {% extends 'base.html.twig' %}
 
-
 {% block title %}Log in{% endblock %}
-
 
 {% block header %}
    <div class='container'>
@@ -15,6 +13,13 @@
 {% endblock %}
 
 {% block body %}
-    {# templates/home.html.twig #}
-    <div {{ vue_component('Login', { 'companyName': 'ETYH', 'loginTitle': 'ACCESS TO APP', 'loginUser': 'Username', 'loginPass': 'Password' }) }}></div>
+    <div {{ vue_component('Login', { 
+        'companyName': 'ETYH', 
+        'loginTitle': 'ACCESS TO APP', 
+        'loginUser': 'Username', 
+        'loginPass': 'Password',
+        'error': error ? error.message : null,
+        'lastUsername': lastUsername
+        }) }}>
+    </div>
 {% endblock %}
